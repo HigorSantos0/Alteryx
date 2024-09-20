@@ -1,0 +1,3024 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="110">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="918" y="738" width="1056" height="660" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="226" g="226" b="226" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1242" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Account Type" action="GroupBy" rename="Account Type" />
+            <SummarizeField field="Begin Balance" action="GroupBy" rename="Begin Balance" />
+            <SummarizeField field="End Balance" action="GroupBy" rename="End Balance" />
+            <SummarizeField field="MOV JE" action="GroupBy" rename="MOV JE" />
+            <SummarizeField field="MOV TRIAL" action="GroupBy" rename="MOV TRIAL" />
+            <SummarizeField field="DIFF" action="GroupBy" rename="DIFF" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="930" y="1110" width="204" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse (62)
+
+Esse Browse retorna todas as contas contábeis que não estão classificadas dentro do Plano de contas. Todas as contas devem estar classificadas, caso haja alguma conta nessa saída deve-se ativar o container de classificação de contas.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1830" y="966" width="132" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+O arquivo excel de reconciliação será salvo na mesma pasta deste workflow]]></Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1710" y="858" width="108" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse (27)
+
+Todos os resultados presentes nessa saída são contas contábeis COM diferença, ou seja, não apresentam o mesmo saldo no razão e no balancete.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1710" y="1026" width="108" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse (5)
+
+Todos os resultados presentes nessa saída são contas contábeis SEM diferença, ou seja, apresentam o mesmo saldo na movimentação do razão e no balancete.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1422" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1314" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\EH774ME\AppData\Local\Temp\Engine_11500_3722fb0f619c9743bc493bcda6276a4b_\Engine_11500_248249276ade534f913f5b46b59915e0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Perfil</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1566" y="978" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Account type" action="GroupBy" rename="Account type" />
+            <SummarizeField field="Begin Balance" action="GroupBy" rename="Begin Balance" />
+            <SummarizeField field="End Balance" action="GroupBy" rename="End Balance" />
+            <SummarizeField field="MOV JE" action="GroupBy" rename="MOV JE" />
+            <SummarizeField field="MOV TRIAL" action="GroupBy" rename="MOV TRIAL" />
+            <SummarizeField field="DIFF" action="GroupBy" rename="DIFF" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1638" y="978" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\EH774ME\AppData\Local\Temp\Engine_11500_3722fb0f619c9743bc493bcda6276a4b_\Engine_11500_92a86d220c15534da379afe252eff275~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1566" y="1026" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Account type" action="GroupBy" rename="Account type" />
+            <SummarizeField field="Begin Balance" action="GroupBy" rename="Begin Balance" />
+            <SummarizeField field="End Balance" action="GroupBy" rename="End Balance" />
+            <SummarizeField field="MOV JE" action="GroupBy" rename="MOV JE" />
+            <SummarizeField field="MOV TRIAL" action="GroupBy" rename="MOV TRIAL" />
+            <SummarizeField field="DIFF" action="GroupBy" rename="DIFF" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="990" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="GL Account Number" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="GL Account Number" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_GL Account Number" selected="False" input="Left_" />
+                <SelectField field="Right_GL Account Number" selected="True" input="Right_" />
+                <SelectField field="Right_Begin Balance" selected="True" input="Right_" />
+                <SelectField field="Right_End Balance" selected="True" input="Right_" />
+                <SelectField field="Right_MOV JE" selected="True" input="Right_" />
+                <SelectField field="Right_MOV TRIAL" selected="True" input="Right_" />
+                <SelectField field="Right_DIFF" selected="True" input="Right_" />
+                <SelectField field="Left_Account Type" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1062" y="1050" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\EH774ME\AppData\Local\Temp\Engine_11500_3722fb0f619c9743bc493bcda6276a4b_\Engine_11500_6780a56e8fd1504b9ea888bb4ac27004~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Perfil</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1170" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_WString" column="1" />
+                <Field name="Begin Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Begin Balance]) &#xA;THEN 0&#xA;ELSE [Sum_Begin Balance] &#xA;ENDIF" type="FixedDecimal" column="2" />
+                <Field name="End Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_End Balance]) &#xA;THEN 0 &#xA;ELSE [Sum_End Balance] &#xA;ENDIF" type="FixedDecimal" column="3" />
+                <Field name="MOV JE" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Functional Amount]) &#xA;THEN 0 &#xA;ELSE [Sum_Functional Amount] &#xA;ENDIF" type="FixedDecimal" column="4" />
+                <Field name="MOV TRIAL" scale="2" size="18" source="Formula: [End Balance] - [Begin Balance]" type="FixedDecimal" column="5" />
+                <Field name="DIFF" scale="2" size="18" source="Formula: [MOV JE] - [MOV TRIAL]" type="FixedDecimal" column="6" />
+                <Field name="Account Type" size="255" source="File: C:\Users\PT149EM\OneDrive - EY\Área de Trabalho\Treinamento GL Analyzer\General Ledger\Cubo\Plano de contas - Treinamento.xlsx|||`Sheet1$`" type="V_String" column="7" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_WString" column="1" />
+                <Field name="Begin Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Begin Balance]) &#xA;THEN 0&#xA;ELSE [Sum_Begin Balance] &#xA;ENDIF" type="FixedDecimal" column="2" />
+                <Field name="End Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_End Balance]) &#xA;THEN 0 &#xA;ELSE [Sum_End Balance] &#xA;ENDIF" type="FixedDecimal" column="3" />
+                <Field name="MOV JE" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Functional Amount]) &#xA;THEN 0 &#xA;ELSE [Sum_Functional Amount] &#xA;ENDIF" type="FixedDecimal" column="4" />
+                <Field name="MOV TRIAL" scale="2" size="18" source="Formula: [End Balance] - [Begin Balance]" type="FixedDecimal" column="5" />
+                <Field name="DIFF" scale="2" size="18" source="Formula: [MOV JE] - [MOV TRIAL]" type="FixedDecimal" column="6" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1314" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="GL Account Number" order="Ascending" />
+            <Field field="Account Type" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>GL Account Number - Ascending
+Account Type - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1494" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>DIFF</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-13 09:55:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0.00</Operand>
+              <StartDate>2019-08-13 09:55:52</StartDate>
+              <EndDate>2019-08-13 09:55:52</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[DIFF] != 0.00</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1638" y="1026" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\EH774ME\AppData\Local\Temp\Engine_11500_3722fb0f619c9743bc493bcda6276a4b_\Engine_11500_ec5ba299118f244e8d33eb751cfba2f0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="918" y="54" width="1056" height="660" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="226" g="226" b="226" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="JE Line Number" selected="True" type="V_String" size="255" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Functional Amount" action="Sum" rename="Sum_Functional Amount" />
+            <SummarizeField field="Business Unit" action="GroupBy" rename="Business Unit" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1122" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsEmpty([Sum_Begin Balance]) &#xA;THEN 0&#xA;ELSE [Sum_Begin Balance] &#xA;ENDIF" field="Begin Balance" size="18.2" type="FixedDecimal" />
+            <FormulaField expression="IF IsEmpty([Sum_End Balance]) &#xA;THEN 0 &#xA;ELSE [Sum_End Balance] &#xA;ENDIF" field="End Balance" size="18.2" type="FixedDecimal" />
+            <FormulaField expression="IF IsEmpty([Sum_Functional Amount]) &#xA;THEN 0 &#xA;ELSE [Sum_Functional Amount] &#xA;ENDIF" field="MOV JE" size="18.2" type="FixedDecimal" />
+            <FormulaField expression="[End Balance] - [Begin Balance]" field="MOV TRIAL" size="18.2" type="FixedDecimal" />
+            <FormulaField expression="[MOV JE] - [MOV TRIAL]" field="DIFF" size="18.2" type="FixedDecimal" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Begin Balance = IF IsEmpty([Sum_Begin Balance]) 
+THEN 0
+ELSE [Sum_Begin Balance]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1194" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GL Account Number" selected="True" />
+            <SelectField field="Business Unit" selected="True" />
+            <SelectField field="Sum_Begin Balance" selected="False" />
+            <SelectField field="Sum_End Balance" selected="False" />
+            <SelectField field="Sum_Functional Amount" selected="False" />
+            <SelectField field="Begin Balance" selected="True" />
+            <SelectField field="End Balance" selected="True" />
+            <SelectField field="MOV JE" selected="True" />
+            <SelectField field="MOV TRIAL" selected="True" />
+            <SelectField field="DIFF" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1650" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DY462LF\AppData\Local\Temp\Engine_17432_2ae9dfe76b484920aee435013be970d1_\Engine_23376_89dcbdf491ca4bf980d6b4b036a8cd79_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="774" width="162" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Plano de Contas</Text>
+          <Font name="Arial Rounded MT Bold" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="157" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="414" width="168" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Journal Entry (Razão)</Text>
+          <Font name="Arial Rounded MT Bold" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="157" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1050" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_String" column="1" />
+                <Field name="Sum_Begin Balance" scale="2" size="28" source="Summarize: Sum - Begin Balance" type="FixedDecimal" column="2" />
+                <Field name="Sum_End Balance" scale="2" size="28" source="Summarize: Sum - End Balance" type="FixedDecimal" column="3" />
+                <Field name="Business Unit" size="255" source="Summarize: GroupBy - Business Unit" type="V_String" column="4" />
+                <Field name="Sum_Functional Amount" scale="2" size="23" source="Summarize: Sum - Functional Amount" type="FixedDecimal" column="5" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_String" column="1" />
+                <Field name="Sum_Begin Balance" scale="2" size="28" source="Summarize: Sum - Begin Balance" type="FixedDecimal" column="2" />
+                <Field name="Sum_End Balance" scale="2" size="28" source="Summarize: Sum - End Balance" type="FixedDecimal" column="3" />
+                <Field name="Business Unit" size="255" source="Summarize: GroupBy - Business Unit" type="V_String" column="4" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#3">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_String" column="1" />
+                <Field name="Business Unit" size="255" source="Summarize: GroupBy - Business Unit" type="V_String" column="4" />
+                <Field name="Sum_Functional Amount" scale="2" size="23" source="Summarize: Sum - Functional Amount" type="FixedDecimal" column="5" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#2</Connection>
+            <Connection>#1</Connection>
+            <Connection>#3</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>GL Account Number</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-21 14:19:03</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-08-21 14:19:03</StartDate>
+              <EndDate>2019-08-21 14:19:03</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([GL Account Number])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>GL Account Number</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-21 14:32:00</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-08-21 14:32:00</StartDate>
+              <EndDate>2019-08-21 14:32:00</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([GL Account Number])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="270" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>GL Account Number</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-21 14:10:03</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-08-21 14:10:03</StartDate>
+              <EndDate>2019-08-21 14:10:03</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([GL Account Number])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="156" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Balancete</Text>
+          <Font name="Arial Rounded MT Bold" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="157" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1494" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>DIFF</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-13 09:55:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0.00</Operand>
+              <StartDate>2019-08-13 09:55:52</StartDate>
+              <EndDate>2019-08-13 09:55:52</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[DIFF] != 0.00</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1326" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="GL Account Number" order="Ascending" />
+            <Field field="Account type" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>GL Account Number - Ascending
+Account type - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Begin Balance" action="Sum" rename="Sum_Begin Balance" />
+            <SummarizeField field="End Balance" action="Sum" rename="Sum_End Balance" />
+            <SummarizeField field="Business Unit" action="GroupBy" rename="Business Unit" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Begin Balance" action="Sum" rename="Sum_Begin Balance" />
+            <SummarizeField field="End Balance" action="Sum" rename="Sum_End Balance" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1182" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_String" column="1" />
+                <Field name="Business Unit" size="255" source="Summarize: GroupBy - Business Unit" type="V_String" column="2" />
+                <Field name="Begin Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Begin Balance]) &#xA;THEN 0&#xA;ELSE [Sum_Begin Balance] &#xA;ENDIF" type="FixedDecimal" column="3" />
+                <Field name="End Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_End Balance]) &#xA;THEN 0 &#xA;ELSE [Sum_End Balance] &#xA;ENDIF" type="FixedDecimal" column="4" />
+                <Field name="MOV JE" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Functional Amount]) &#xA;THEN 0 &#xA;ELSE [Sum_Functional Amount] &#xA;ENDIF" type="FixedDecimal" column="5" />
+                <Field name="MOV TRIAL" scale="2" size="18" source="Formula: [End Balance] - [Begin Balance]" type="FixedDecimal" column="6" />
+                <Field name="DIFF" scale="2" size="18" source="Formula: [MOV JE] - [MOV TRIAL]" type="FixedDecimal" column="7" />
+                <Field name="Account type" size="255" source="Formula: [_CurrentField_]" type="V_WString" column="8" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_String" column="1" />
+                <Field name="Business Unit" size="255" source="Summarize: GroupBy - Business Unit" type="V_String" column="2" />
+                <Field name="Begin Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Begin Balance]) &#xA;THEN 0&#xA;ELSE [Sum_Begin Balance] &#xA;ENDIF" type="FixedDecimal" column="3" />
+                <Field name="End Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_End Balance]) &#xA;THEN 0 &#xA;ELSE [Sum_End Balance] &#xA;ENDIF" type="FixedDecimal" column="4" />
+                <Field name="MOV JE" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Functional Amount]) &#xA;THEN 0 &#xA;ELSE [Sum_Functional Amount] &#xA;ENDIF" type="FixedDecimal" column="5" />
+                <Field name="MOV TRIAL" scale="2" size="18" source="Formula: [End Balance] - [Begin Balance]" type="FixedDecimal" column="6" />
+                <Field name="DIFF" scale="2" size="18" source="Formula: [MOV JE] - [MOV TRIAL]" type="FixedDecimal" column="7" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1050" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DY462LF\AppData\Local\Temp\Engine_17432_2ae9dfe76b484920aee435013be970d1_\Engine_23376_3bd80619a6ab4840af4fe0ac887643d0_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="978" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="GL Account Number" />
+            <Field field="Business Unit" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="GL Account Number" />
+            <Field field="Business Unit" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_GL Account Number" selected="False" input="Left_" />
+                <SelectField field="Left_Business Unit" selected="False" input="Left_" />
+                <SelectField field="Right_GL Account Number" selected="True" input="Right_" />
+                <SelectField field="Right_Business Unit" selected="True" input="Right_" />
+                <SelectField field="Right_Begin Balance" selected="True" input="Right_" />
+                <SelectField field="Right_End Balance" selected="True" input="Right_" />
+                <SelectField field="Right_MOV JE" selected="True" input="Right_" />
+                <SelectField field="Right_MOV TRIAL" selected="True" input="Right_" />
+                <SelectField field="Right_DIFF" selected="True" input="Right_" />
+                <SelectField field="Left_Account Type" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="978" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="GL Account Number" />
+            <Field field="Business Unit" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="GL Account Number" />
+            <Field field="Business Unit" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_GL Account Number" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_Begin Balance" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_End Balance" selected="True" input="Left_" />
+                <SelectField field="Left_Business Unit" selected="True" input="Left_" />
+                <SelectField field="Right_GL Account Number" selected="False" rename="Right_GL Account Number" input="Right_" />
+                <SelectField field="Right_Sum_Functional Amount" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1578" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Account type" action="GroupBy" rename="Account type" />
+            <SummarizeField field="Begin Balance" action="GroupBy" rename="Begin Balance" />
+            <SummarizeField field="End Balance" action="GroupBy" rename="End Balance" />
+            <SummarizeField field="MOV JE" action="GroupBy" rename="MOV JE" />
+            <SummarizeField field="MOV TRIAL" action="GroupBy" rename="MOV TRIAL" />
+            <SummarizeField field="DIFF" action="GroupBy" rename="DIFF" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GL Account Number" selected="True" />
+            <SelectField field="Account Type" selected="True" />
+            <SelectField field="Business Unit" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1650" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DY462LF\AppData\Local\Temp\Engine_17432_2ae9dfe76b484920aee435013be970d1_\Engine_23376_fcc375a5dcda4a17a4613c994d49576c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1578" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Account type" action="GroupBy" rename="Account type" />
+            <SummarizeField field="Begin Balance" action="GroupBy" rename="Begin Balance" />
+            <SummarizeField field="End Balance" action="GroupBy" rename="End Balance" />
+            <SummarizeField field="MOV JE" action="GroupBy" rename="MOV JE" />
+            <SummarizeField field="MOV TRIAL" action="GroupBy" rename="MOV TRIAL" />
+            <SummarizeField field="DIFF" action="GroupBy" rename="DIFF" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GL Account Number" selected="True" />
+            <SelectField field="Begin Balance" selected="True" />
+            <SelectField field="End Balance" selected="True" />
+            <SelectField field="Business Unit" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="954" y="246" width="240" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Reconciliação final
+]]></Text>
+          <Font name="Arial Rounded MT Bold" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="157" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="510" y="606" width="336" height="528" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>****** PONTOS A CONSIDERAR ******
+
+1. Todas os 3 arquivos devem estar com as colunas nomeadas de acordo com a descrição das colunas no GL Analyzer.
+
+2. Campos mandatórios do Balancete:
+    - GL Account Number (V_String)
+    - Begin Balance (Fixed Decimal 18.2)
+    - End Balance (Fixed Decimal 18.2)
+    - Business Unit (V_String)*
+
+3. Campos mandatórios do Journal Entry:
+    - GL Account Number (V_String)
+    - Functional Amount (Fixed Decimal 18.2)
+    - Business Unit (V_String)*
+
+4. Campos mandatórios do Plano de Contas:
+   - GL Account Number (V_String)
+   - Account type (V_String)
+    - Business Unit (V_String)*
+
+5. Os campos de Output, por padrão, estão desabilitados para que seja feita a análise dos arquivos antes de salvar.
+   - Estando satisfeito que os resultados encontrados refletem a realidade dos arquivos Inputados ir na aba "Runtime", nas configurações do workflow, e desmarcar a opção "Disable All Tools that Write Output".</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1710" y="354" width="108" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse (5)
+
+Todos os resultados presentes nessa saída são contas contábeis SEM diferença, ou seja, apresentam o mesmo saldo na movimentação do razão e no balancete.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1710" y="186" width="108" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse (27)
+
+Todos os resultados presentes nessa saída são contas contábeis COM diferença, ou seja, não apresentam o mesmo saldo no razão e no balancete.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>|</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>65001</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>JE Cliente V2 1234 JAN-MAR 2022.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="JE Number" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="JE Header Description" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="JE Line Number" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="JE Line Description" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="GL Account Number" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Business Unit Code" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Preparer ID" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Fiscal Period" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Effective Date" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Entry Date" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Fiscal Year" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Functional Amount" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Functional Currency Code" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+            <Field name="Source Code" size="254" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\JE Cliente V2 1234 JAN-MAR 2022.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\TB Cliente V2 1234 JAN-MAR 2022.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>TB Cliente V2 1234 JAN-MAR 2022.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GL Account Number" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\TB Cliente V2 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Begin Balance" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\TB Cliente V2 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="End Balance" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\TB Cliente V2 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Business Unit" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\TB Cliente V2 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="858" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>COA Cliente1234 JAN-MAR (completo).xlsx
+Query=`Export COA$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Unit" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="GL Account Number" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="GL Account Name" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Account Type" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Account Sub Type" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Account Class" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Account Sub Class" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Segment 01" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Segment 02" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Segment 03" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Segment 04" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+            <Field name="Segment 05" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente1234 JAN-MAR (completo).xlsx|||`Export COA$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1422" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DY462LF\AppData\Local\Temp\Engine_17432_2ae9dfe76b484920aee435013be970d1_\Engine_23376_f72a3ed3c46c41b49e3df24bf387d836_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1494" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Reconciliação.xlsx|||Reconciliacao geral</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Reconciliação.xlsx
+Query=Reconciliacao geral</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1422" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+        <Position x="126" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <DetourRight value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="270" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>GL Account Number</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-21 14:10:03</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-08-21 14:10:03</StartDate>
+              <EndDate>2019-08-21 14:10:03</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([GL Account Number])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Begin Balance" action="Sum" rename="Sum_Begin Balance" />
+            <SummarizeField field="End Balance" action="Sum" rename="Sum_End Balance" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Begin Balance" action="Sum" rename="Sum_Begin Balance" />
+            <SummarizeField field="End Balance" action="Sum" rename="Sum_End Balance" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GL Account Number" selected="True" />
+            <SelectField field="Begin Balance" selected="True" type="FixedDecimal" size="18.2" />
+            <SelectField field="End Balance" selected="True" type="FixedDecimal" size="18.2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1146" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsEmpty([Sum_Begin Balance]) &#xA;THEN 0&#xA;ELSE [Sum_Begin Balance] &#xA;ENDIF" field="Begin Balance" size="18.2" type="FixedDecimal" />
+            <FormulaField expression="IF IsEmpty([Sum_End Balance]) &#xA;THEN 0 &#xA;ELSE [Sum_End Balance] &#xA;ENDIF" field="End Balance" size="18.2" type="FixedDecimal" />
+            <FormulaField expression="IF IsEmpty([Sum_Functional Amount]) &#xA;THEN 0 &#xA;ELSE [Sum_Functional Amount] &#xA;ENDIF" field="MOV JE" size="18.2" type="FixedDecimal" />
+            <FormulaField expression="[End Balance] - [Begin Balance]" field="MOV TRIAL" size="18.2" type="FixedDecimal" />
+            <FormulaField expression="[MOV JE] - [MOV TRIAL]" field="DIFF" size="18.2" type="FixedDecimal" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Begin Balance = IF IsEmpty([Sum_Begin Balance]) 
+THEN 0
+ELSE [Sum_Begin Balance]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1218" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GL Account Number" selected="True" />
+            <SelectField field="Sum_Begin Balance" selected="False" />
+            <SelectField field="Sum_End Balance" selected="False" />
+            <SelectField field="Sum_Functional Amount" selected="False" />
+            <SelectField field="Begin Balance" selected="True" />
+            <SelectField field="End Balance" selected="True" />
+            <SelectField field="MOV JE" selected="True" />
+            <SelectField field="MOV TRIAL" selected="True" />
+            <SelectField field="DIFF" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1074" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_String" column="1" />
+                <Field name="Sum_Begin Balance" scale="2" size="23" source="Summarize: Sum - Begin Balance" type="FixedDecimal" column="2" />
+                <Field name="Sum_End Balance" scale="2" size="23" source="Summarize: Sum - End Balance" type="FixedDecimal" column="3" />
+                <Field name="Sum_Functional Amount" scale="2" size="23" source="Summarize: Sum - Functional Amount" type="FixedDecimal" column="4" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_String" column="1" />
+                <Field name="Sum_Begin Balance" scale="2" size="23" source="Summarize: Sum - Begin Balance" type="FixedDecimal" column="2" />
+                <Field name="Sum_End Balance" scale="2" size="23" source="Summarize: Sum - End Balance" type="FixedDecimal" column="3" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#3">
+              <RecordInfo>
+                <Field name="GL Account Number" size="254" source="Summarize: GroupBy - GL Account Number" type="V_WString" column="1" />
+                <Field name="Sum_Functional Amount" scale="2" size="23" source="Summarize: Sum - Functional Amount" type="FixedDecimal" column="4" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#2</Connection>
+            <Connection>#1</Connection>
+            <Connection>#3</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="990" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="GL Account Number" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="GL Account Number" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_GL Account Number" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_Begin Balance" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_End Balance" selected="True" input="Left_" />
+                <SelectField field="Right_Sum_Functional Amount" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="978" y="918" width="240" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Reconciliação final
+]]></Text>
+          <Font name="Arial Rounded MT Bold" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="157" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1494" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Reconciliação.xlsx|||Reconciliacao geral</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Reconciliação.xlsx
+Query=Reconciliacao geral</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+        <Position x="138" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <DetourRight value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="JE Line Number" selected="True" type="V_String" size="255" />
+            <SelectField field="Functional Amount" selected="True" type="FixedDecimal" size="18.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Functional Amount" action="Sum" rename="Sum_Functional Amount" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>GL Account Number</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-21 14:19:03</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-08-21 14:19:03</StartDate>
+              <EndDate>2019-08-21 14:19:03</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([GL Account Number])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+        <Position x="138" y="858" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <DetourRight value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="282" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>GL Account Number</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-08-21 14:32:00</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-08-21 14:32:00</StartDate>
+              <EndDate>2019-08-21 14:32:00</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([GL Account Number])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GL Account Number" selected="True" />
+            <SelectField field="Account Type" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="978" y="798" width="240" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Reconciliação Sem BU</Text>
+          <Font name="Arial Rounded MT Bold" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="157" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="954" y="114" width="240" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Reconciliação Com BU</Text>
+          <Font name="Arial Rounded MT Bold" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="157" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="930" y="426" width="204" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse (22)
+
+Esse Browse retorna todas as contas contábeis que não estão classificadas dentro do Plano de contas. Todas as contas devem estar classificadas, caso haja alguma conta nessa saída deve-se ativar o container de classificação de contas.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="246" width="204" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Detour (48)
+
+Para ser feita a reconciliação com o campo de Business Unit manter essa ferramenta desmarcada, caso contrario mante-lá marcada</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="594" width="204" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Detour (83)
+
+Para ser feita a reconciliação com o campo de Business Unit manter essa ferramenta desmarcada, caso contrario mante-lá marcada</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="1026" width="204" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Detour (78)
+
+Para ser feita a reconciliação com o campo de Business Unit manter essa ferramenta desmarcada, caso contrario mante-lá marcada</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1830" y="294" width="132" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+O arquivo excel de reconciliação será salvo na mesma pasta deste workflow]]></Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1254" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="GL Account Number" action="GroupBy" rename="GL Account Number" />
+            <SummarizeField field="Account Type" action="GroupBy" rename="Account Type" />
+            <SummarizeField field="Begin Balance" action="GroupBy" rename="Begin Balance" />
+            <SummarizeField field="End Balance" action="GroupBy" rename="End Balance" />
+            <SummarizeField field="MOV JE" action="GroupBy" rename="MOV JE" />
+            <SummarizeField field="MOV TRIAL" action="GroupBy" rename="MOV TRIAL" />
+            <SummarizeField field="DIFF" action="GroupBy" rename="DIFF" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Functional Amount" action="Sum" rename="Sum_Functional Amount" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Functional Amount" action="Sum" rename="Sum_Functional Amount" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="112">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1782" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>
+          </TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1698" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Business Unit" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Business Unit" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_GL Account Number" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Begin Balance" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_End Balance" selected="False" input="Left_" />
+                <SelectField field="Right_GL Account Number" selected="False" rename="Right_GL Account Number" input="Right_" />
+                <SelectField field="Right_Sum_Functional Amount" selected="False" input="Right_" />
+                <SelectField field="Right_Business Unit" selected="False" rename="Right_Business Unit" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1782" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile />
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1842" y="534" width="108" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Join (111)
+
+Verifica se todas as BUs estão presentes no balancete e no razão, Browse(112) e Browse(113) precisam estar vazios.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="246" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Account Type" action="GroupBy" rename="Account Type" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1253" y="1145" width="421" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Classificação de contas sem BU</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="77">
+          <GuiSettings>
+            <Position x="1518" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"GL Account Number","GL Account Name","Account Type","Account Sub Type","Account Class","Account Sub Class"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1446" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="GL Account Number" selected="True" />
+                <SelectField field="GL Account Name" selected="True" />
+                <SelectField field="Account Type" selected="True" />
+                <SelectField field="Account Sub Type" selected="True" />
+                <SelectField field="Account Class" selected="True" />
+                <SelectField field="Account Sub Class" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1374" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <AutoResetMode>ByName</AutoResetMode>
+              <MultiMetaInfo>
+                <MetaInfo name="#2">
+                  <RecordInfo>
+                    <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_WString" column="1" />
+                    <Field name="Begin Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Begin Balance]) &#xA;THEN 0&#xA;ELSE [Sum_Begin Balance] &#xA;ENDIF" type="FixedDecimal" column="2" />
+                    <Field name="End Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_End Balance]) &#xA;THEN 0 &#xA;ELSE [Sum_End Balance] &#xA;ENDIF" type="FixedDecimal" column="3" />
+                    <Field name="MOV JE" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Functional Amount]) &#xA;THEN 0 &#xA;ELSE [Sum_Functional Amount] &#xA;ENDIF" type="FixedDecimal" column="4" />
+                    <Field name="MOV TRIAL" scale="2" size="18" source="Formula: [End Balance] - [Begin Balance]" type="FixedDecimal" column="5" />
+                    <Field name="DIFF" scale="2" size="18" source="Formula: [MOV JE] - [MOV TRIAL]" type="FixedDecimal" column="6" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo name="#3">
+                  <RecordInfo>
+                    <Field name="GL Account Number" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente V3 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" column="1" />
+                    <Field name="Business Unit" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente V3 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" column="7" />
+                    <Field name="GL Account Name" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente V3 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" column="8" />
+                    <Field name="Account Type" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente V3 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" column="9" />
+                    <Field name="Account Sub Type" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente V3 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" column="10" />
+                    <Field name="Account Class" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente V3 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" column="11" />
+                    <Field name="Account Sub Class" size="255" source="File: C:\Users\EH774ME\OneDrive - EY\Documents\Treinamento GL Analyzer 6\GL Analyzer\Tratados Exemplos\COA Cliente V3 1234 JAN-MAR 2022.xlsx|||`Sheet1$`" type="V_String" column="12" />
+                  </RecordInfo>
+                </MetaInfo>
+              </MultiMetaInfo>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ManualDelayed</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#3</Connection>
+                <Connection>#2</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1278" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="GL Account Number" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="GL Account Number" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_GL Account Number" selected="True" input="Left_" />
+                    <SelectField field="Left_Business Unit" selected="False" input="Left_" />
+                    <SelectField field="Left_GL Account Name" selected="True" input="Left_" />
+                    <SelectField field="Left_Account Type" selected="True" input="Left_" />
+                    <SelectField field="Left_Account Sub Type" selected="True" input="Left_" />
+                    <SelectField field="Left_Account Class" selected="True" input="Left_" />
+                    <SelectField field="Left_Account Sub Class" selected="True" input="Left_" />
+                    <SelectField field="Right_GL Account Number" selected="False" input="Right_" />
+                    <SelectField field="Right_Begin Balance" selected="False" input="Right_" />
+                    <SelectField field="Right_End Balance" selected="False" input="Right_" />
+                    <SelectField field="Right_MOV JE" selected="False" input="Right_" />
+                    <SelectField field="Right_MOV TRIAL" selected="False" input="Right_" />
+                    <SelectField field="Right_DIFF" selected="False" input="Right_" />
+                    <SelectField field="Right_R_GL Account Number" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="116">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1590" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\EH774ME\AppData\Local\Temp\Engine_11500_3722fb0f619c9743bc493bcda6276a4b_\Engine_11500_fe85133935e699429396f5ec036bb6c9~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Perfil</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1217" y="460" width="433" height="134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Classificação de contas com BU</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+          <Caption>Classificação de contas com BU</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1566" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">Classificação CoA.xlsx|||Sheet1</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Classificação CoA.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1242" y="509" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="GL Account Number" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="GL Account Number" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_GL Account Number" selected="True" input="Left_" />
+                    <SelectField field="Left_Business Unit" selected="True" input="Left_" />
+                    <SelectField field="Left_GL Account Name" selected="True" input="Left_" />
+                    <SelectField field="Left_Account Type" selected="True" input="Left_" />
+                    <SelectField field="Left_Account Sub Type" selected="True" input="Left_" />
+                    <SelectField field="Left_Account Class" selected="True" input="Left_" />
+                    <SelectField field="Left_Account Sub Class" selected="True" input="Left_" />
+                    <SelectField field="Right_GL Account Number" selected="False" input="Right_" />
+                    <SelectField field="Right_Begin Balance" selected="False" input="Right_" />
+                    <SelectField field="Right_End Balance" selected="False" input="Right_" />
+                    <SelectField field="Right_MOV JE" selected="False" input="Right_" />
+                    <SelectField field="Right_MOV TRIAL" selected="False" input="Right_" />
+                    <SelectField field="Right_DIFF" selected="False" input="Right_" />
+                    <SelectField field="Right_R_GL Account Number" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1338" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <AutoResetMode>ByName</AutoResetMode>
+              <MultiMetaInfo>
+                <MetaInfo name="#2">
+                  <RecordInfo>
+                    <Field name="GL Account Number" size="255" source="Summarize: GroupBy - GL Account Number" type="V_String" column="1" />
+                    <Field name="Begin Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Begin Balance]) &#xA;THEN 0&#xA;ELSE [Sum_Begin Balance] &#xA;ENDIF" type="FixedDecimal" column="2" />
+                    <Field name="End Balance" scale="2" size="18" source="Formula: IF IsEmpty([Sum_End Balance]) &#xA;THEN 0 &#xA;ELSE [Sum_End Balance] &#xA;ENDIF" type="FixedDecimal" column="3" />
+                    <Field name="MOV JE" scale="2" size="18" source="Formula: IF IsEmpty([Sum_Functional Amount]) &#xA;THEN 0 &#xA;ELSE [Sum_Functional Amount] &#xA;ENDIF" type="FixedDecimal" column="4" />
+                    <Field name="MOV TRIAL" scale="2" size="18" source="Formula: [End Balance] - [Begin Balance]" type="FixedDecimal" column="5" />
+                    <Field name="DIFF" scale="2" size="18" source="Formula: [MOV JE] - [MOV TRIAL]" type="FixedDecimal" column="6" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo name="#3">
+                  <RecordInfo>
+                    <Field name="GL Account Number" size="255" source="File: C:\Users\DY462LF\OneDrive - EY\Desktop\Importantes\Teste GLA\Arquivos originais\CoA.xlsx|||`Export COA$`" type="V_String" column="1" />
+                    <Field name="Business Unit" size="255" source="File: C:\Users\DY462LF\OneDrive - EY\Desktop\Importantes\Teste GLA\Arquivos originais\CoA.xlsx|||`Export COA$`" type="V_String" column="7" />
+                    <Field name="GL Account Name" size="255" source="File: C:\Users\DY462LF\OneDrive - EY\Desktop\Importantes\Teste GLA\Arquivos originais\CoA.xlsx|||`Export COA$`" type="V_String" column="8" />
+                    <Field name="Account Type" size="255" source="File: C:\Users\DY462LF\OneDrive - EY\Desktop\Importantes\Teste GLA\Arquivos originais\CoA.xlsx|||`Export COA$`" type="V_String" column="9" />
+                    <Field name="Account Sub Type" size="255" source="File: C:\Users\DY462LF\OneDrive - EY\Desktop\Importantes\Teste GLA\Arquivos originais\CoA.xlsx|||`Export COA$`" type="V_String" column="10" />
+                    <Field name="Account Class" size="255" source="File: C:\Users\DY462LF\OneDrive - EY\Desktop\Importantes\Teste GLA\Arquivos originais\CoA.xlsx|||`Export COA$`" type="V_String" column="11" />
+                    <Field name="Account Sub Class" size="255" source="File: C:\Users\DY462LF\OneDrive - EY\Desktop\Importantes\Teste GLA\Arquivos originais\CoA.xlsx|||`Export COA$`" type="V_String" column="12" />
+                  </RecordInfo>
+                </MetaInfo>
+              </MultiMetaInfo>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ManualDelayed</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#3</Connection>
+                <Connection>#2</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1410" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="GL Account Number" selected="True" />
+                <SelectField field="Business Unit" selected="True" />
+                <SelectField field="GL Account Name" selected="True" />
+                <SelectField field="Account Type" selected="True" />
+                <SelectField field="Account Sub Type" selected="True" />
+                <SelectField field="Account Class" selected="True" />
+                <SelectField field="Account Sub Class" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings>
+            <Position x="1482" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"GL Account Number","Business Unit","GL Account Name","Account Type","Account Sub Type","Account Class","Account Sub Class"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output2" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Right" />
+      <Destination ToolID="74" Connection="Right" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="74" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="63" Connection="Join" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="63" Connection="Right" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Right" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="False" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="True" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="24" Connection="Right" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="24" Connection="Left" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="113" Connection="Right" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="113" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="23" Connection="Right" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="23" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="False" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="23" Connection="Right" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Right" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Right" />
+      <Destination ToolID="44" Connection="Right" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="44" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="24" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="24" Connection="Left" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="24" Connection="Right" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output2" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Left" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Right" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="True" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="True" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="64" Connection="Left" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="64" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="63" Connection="Right" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="84" Connection="True" />
+      <Destination ToolID="63" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="64" Connection="Join" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="64" Connection="Left" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="64" Connection="Right" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Left" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Right" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="True" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="True" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Left" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Right" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="113" Connection="Left" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="113" Connection="Right" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output26" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="74" Connection="Right" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="74" Connection="Left" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="44" Connection="Right" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="44" Connection="Left" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output26" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="True" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Reconciliação padrão 10x</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="edf35978-07f0-4626-a998-41d1faf73191" />
+      <Telemetry>
+        <PreviousWorkflowId value="b96fb6b3-36e2-42a4-b963-bbf9c873884b" />
+        <OriginWorkflowId value="dcd75718-eba0-4622-8869-95eaa2234911" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
